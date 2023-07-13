@@ -2,29 +2,48 @@ body {
     margin: 0;
     background-color: black;
 }
-div.main {
-    height: 100vh;
-    width: 100vw;
-    background-color: black;
-    text-align: center;
-    position: relative;
-}
-div.main > img {
-    max-height: 70vh;
-    width: auto;
-    max-width: 100vw;
-    margin: 0 auto;
-}
-div.main div {
-    display: flex;
-    justify-content: center;
-    color: white;
-    margin: 20px 0 30px;
-}
+
 h1, h2, h3, p, a {
     font-family: AgencyFB;
     color: white;
     margin: 0;
+}
+.event-card {
+    /* position: relative; */
+    width: 100%;
+    aspect-ratio: 16/9;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 250ms ease-in-out;
+}
+.event-link:hover .event-card {
+    filter: blur(1px) brightness(0.6);
+}
+.event-link:hover img {
+    opacity: 1;
+    top: 50%;
+}
+.event-link img {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    opacity: 0;
+    transition: all 250ms ease-in-out;
+}
+.card-1 {
+    background-image: url(../img/homerun.jpg);
+}
+.card-2 {
+    background-image: url(../img/seeliebe.jpg);
+}
+@media only screen and (max-width:1199px) {
+    a.event-link img {
+        top: 50%;
+        opacity: 1;
+    }
 }
 h1 {
     font-size: 60px;
