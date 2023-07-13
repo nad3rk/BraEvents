@@ -39,7 +39,7 @@ h1, h2, h3, p, a {
 .card-2 {
     background-image: url(../img/seeliebe.jpg);
 }
-@media only screen and (max-width:1199px) {
+@media only screen and (max-width: 991px) {
     a.event-link img {
         top: 50%;
         opacity: 1;
