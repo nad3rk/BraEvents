@@ -1,12 +1,20 @@
 body {
     margin: 0;
     background-color: black;
+    min-height: 100vh;
+}
+.container {
+    min-height: calc(100vh - 67px);
 }
 
 h1, h2, h3, p, a {
     font-family: AgencyFB;
     color: white;
     margin: 0;
+}
+.event-link {
+    height: 100%;
+    width: 100%;
 }
 .event-card {
     /* position: relative; */
@@ -20,19 +28,29 @@ h1, h2, h3, p, a {
 .event-link:hover .event-card {
     filter: blur(1px) brightness(0.6);
 }
-.event-link:hover img {
-    opacity: 1;
-    top: 50%;
-}
-.event-link img {
+.event-link .logo {
     position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 60%;
-    opacity: 0;
+    height: 100%;
+    width: 100%;
+    top: 30px;
+    left: 0;
+    /* transform: translate(-50%, -50%); */
     transition: all 250ms ease-in-out;
+    display: flex;
 }
+    .event-link .logo img {
+        width: 60%;
+        margin: auto;
+        opacity: 0;
+        transition: all 250ms ease-in-out;
+    }
+.event-link:hover .logo {
+    top: 0;
+    opacity: 1;
+}
+    .event-link:hover .logo img {
+        opacity: 1;
+    }
 .card-1 {
     background-image: url(../img/homerun.jpg);
 }
@@ -40,10 +58,16 @@ h1, h2, h3, p, a {
     background-image: url(../img/seeliebe.jpg);
 }
 @media only screen and (max-width: 991px) {
-    a.event-link img {
-        top: 50%;
+    .event-link .event-card {
+        filter: brightness(0.8);
+    }
+    a.event-link .logo {
+        top: 0;
         opacity: 1;
     }
+        .event-link .logo img {
+            opacity: 1;
+        }
 }
 h1 {
     font-size: 60px;
@@ -69,25 +93,12 @@ p {
     font-display: swap;
 }
 
-.imprint-button {
-    position: absolute;
-    bottom: 50px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
 .imprint {
-    color: white;
-    width: 80%;
-    padding: 0;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 10vw;
-    position: relative;
+    width: 100%;
+    display: flex;
+    padding: 20px 0;
 }
-.imprint a.back-button {
-    position: absolute;
-    top: 0;
-    right: 0;
+.imprint .imprint-button {
+    margin: auto;
     font-size: 22px;
 }
