@@ -6,31 +6,39 @@
 
 <!-- CONTENT -->
 
-<div class="text-center">
-    <img style="width: 160px; margin: 50px 0 100px;" src="{% static '/app/img/braevents.png' %}" alt="">
-</div>
-
 <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-9 col-xl-4 px-0 pb-5 pb-xl-0">
-            <a href="https://www.homerun-openair.de/" class="event-link position-relative">
-                <div class="event-card card-1">
-                </div>
-                <img src="{% static '/app/img/homerun_logo.png' %}" alt="">
-            </a>
-        </div>
-        <div class="d-none d-xl-block col-xl-1"></div>
-        <div class="col-9 col-xl-4 px-0">
-            <a href="https://www.seeliebe-hanau.de/" class="event-link position-relative">
-                <div class="event-card card-2">
-                </div>
-                <img src="{% static '/app/img/seeliebe_logo.png' %}" alt="">
-            </a>
+    <div class="text-center">
+        <img style="width: 160px; margin: 50px 0 100px;" src="{% static '/app/img/braevents.png' %}" alt="">
+    </div>
+
+    <div>
+        <div class="row justify-content-center">
+            <div class="col-9 col-xl-4 px-0 pb-5 pb-xl-0 d-flex">
+                <a href="https://www.homerun-openair.de/" class="event-link position-relative">
+                    <div class="event-card card-1">
+                    </div>
+                    <div class="logo">
+                        <img src="{% static '/app/img/homerun_logo.png' %}" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="d-none d-xl-block col-xl-1"></div>
+            <div class="col-9 col-xl-4 px-0 d-flex">
+                <a href="https://www.seeliebe-hanau.de/" class="event-link position-relative">
+                    <div class="event-card card-2">
+                    </div>
+                    <div class="logo">
+                        <img src="{% static '/app/img/seeliebe_logo.png' %}" alt="">
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
 </div>
 
-<a class="imprint-button" style="font-size: 18px;" href="{% url 'imprint' %}">Impressum</a>
+<div class="imprint"> 
+    <a class="imprint-button" style="font-size: 18px;" href="{% url 'imprint' %}">Impressum</a>
+</div>
 
 {% endblock %}
 
