@@ -1,3 +1,8 @@
+@font-face {
+    font-family: AgencyFB;
+    src: url(../font/agency_fb.ttf);
+    font-display: swap;
+}
 body {
     margin: 0;
     background-color: black;
@@ -15,6 +20,9 @@ body {
         width: 140px;
         margin: 40px 0 60px;
     }
+    .event-card {
+        aspect-ratio: 16/9;
+    }
 }
 h1, h2, h3, p, a {
     font-family: AgencyFB;
@@ -26,7 +34,6 @@ h1, h2, h3, p, a {
     width: 100%;
 }
 .event-card {
-    /* position: relative; */
     width: 100%;
     aspect-ratio: 16/19;
     background-position: center;
@@ -43,7 +50,6 @@ h1, h2, h3, p, a {
     width: 100%;
     top: 30px;
     left: 0;
-    /* transform: translate(-50%, -50%); */
     transition: all 250ms ease-in-out;
     display: flex;
 }
@@ -99,12 +105,6 @@ p {
         padding-top: 70px;
     }
 }
-@font-face {
-    font-family: AgencyFB;
-    src: url(../font/agency_fb.ttf);
-    font-display: swap;
-}
-
 .imprint {
     width: 100%;
     display: flex;
