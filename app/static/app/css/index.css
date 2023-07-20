@@ -28,7 +28,7 @@ h1, h2, h3, p, a {
 .event-card {
     /* position: relative; */
     width: 100%;
-    aspect-ratio: 16/9;
+    aspect-ratio: 16/19;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
