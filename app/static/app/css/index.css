@@ -6,7 +6,16 @@ body {
 .container {
     min-height: calc(100vh - 67px);
 }
-
+.logo {
+    width: 160px; 
+    margin: 50px 0 100px;
+}
+@media only screen and (max-width:991px) {
+    .logo {
+        width: 140px;
+        margin: 0px 0 80px;
+    }
+}
 h1, h2, h3, p, a {
     font-family: AgencyFB;
     color: white;
@@ -56,6 +65,9 @@ h1, h2, h3, p, a {
 }
 .card-2 {
     background-image: url(../img/seeliebe.jpg);
+}
+.card-3 {
+    background-image: url(../img/kiesgrube.jpg);
 }
 @media only screen and (max-width: 991px) {
     .event-link .event-card {
