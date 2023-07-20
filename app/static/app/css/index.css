@@ -6,14 +6,14 @@ body {
 .container {
     min-height: calc(100vh - 67px);
 }
-.logo {
+.main-logo {
     width: 160px; 
     margin: 50px 0 100px;
 }
 @media only screen and (max-width:991px) {
-    .logo {
+    .main-logo {
         width: 140px;
-        margin: 0px 0 80px;
+        margin: 40px 0 60px;
     }
 }
 h1, h2, h3, p, a {
