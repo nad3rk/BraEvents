@@ -15,7 +15,7 @@ body {
     width: 160px; 
     margin: 50px 0 100px;
 }
-@media only screen and (max-width:991px), (hover:hover)  {
+@media only screen and (max-width:991px)  {
     img.main-logo {
         width: 140px;
         margin: 40px 0 60px;
@@ -45,6 +45,7 @@ h1, h2, h3, p, a {
 .event-link {
     height: 100%;
     width: 100%;
+    transition: all 250ms ease-in-out;
 }
 .event-card {
     width: 100%;
@@ -56,12 +57,13 @@ h1, h2, h3, p, a {
 }
 .event-link:hover .event-card {
     filter: blur(1px) brightness(0.6);
+    transition: all 250ms ease-in-out;
 }
 .event-link .logo {
     position: absolute;
     height: 100%;
     width: 100%;
-    top: 30px;
+    top: 0;
     left: 0;
     transition: all 250ms ease-in-out;
     display: flex;
@@ -69,7 +71,7 @@ h1, h2, h3, p, a {
     .event-link .logo img {
         width: 60%;
         margin: auto;
-        opacity: 0;
+        opacity: 1;
         transition: all 250ms ease-in-out;
     }
 .event-link:hover .logo {
