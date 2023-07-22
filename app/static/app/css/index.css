@@ -13,7 +13,7 @@ body {
 }
 .main-logo {
     width: 160px; 
-    margin: 50px 0 100px;
+    margin: 50px 0 80px;
 }
 @media only screen and (max-width:991px)  {
     img.main-logo {
@@ -37,7 +37,7 @@ body {
         font-size: 20px;
     }
 }
-h1, h2, h3, p, a {
+h1, h2, h3, h4, p, a {
     font-family: AgencyFB;
     color: white;
     margin: 0;
